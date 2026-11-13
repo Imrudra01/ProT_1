@@ -1,0 +1,30 @@
+{
+  "name": "ProT_1 Team Shared Environment",
+  "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/python:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vsliveshare.vsliveshare",
+        "ms-vsliveshare.vsliveshare-audio",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode",
+        "editorconfig.editorconfig"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+        "liveshare.featureSet": "insiders",
+        "liveshare.presence": true
+      }
+    }
+  },
+  "forwardPorts": [3000, 8080],
+  "postCreateCommand": "echo 'Team environment ProT_1 is ready! Use Live Share or Codespaces to collaborate.'"
+}
+
